@@ -1,0 +1,21 @@
+{
+  "languages": {
+    "Nix": {
+      "language_servers": ["nixd", "!nil", "..."]
+    }
+  },
+  "lsp": {
+    "nixd": {
+      "settings": {
+        "nixpkgs": {
+          "expr": "let flake = builtins.getFlake (toString ./.); in flake.inputs.nixpkgs.legacyPackages.x86_64-linux"
+        },
+        "options": {
+          "nvf": {
+            "expr": "let flake = builtins.getFlake (toString ./.); in (flake.inputs.nvf.lib.neovimConfiguration { pkgs = flake.inputs.nixpkgs.legacyPackages.x86_64-linux; modules = [ ./default.nix ]; }).options"
+          }
+        }
+      }
+    }
+  }
+}
