@@ -11,7 +11,6 @@
     nvf,
     ...
   }: let
-    # Credits: snoweuph
     mkForSystems = f:
       builtins.listToAttrs (
         map (system: {

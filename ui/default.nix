@@ -4,6 +4,7 @@
     ./icons.nix
     ./indent.nix
     ./popups.nix
+    ./theme.nix
   ];
 
   vim = {
