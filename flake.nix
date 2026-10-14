@@ -1,11 +1,10 @@
 {
   inputs = {
-    nixpkgs.url = "https://channels.nixos.org/nixos-unstable/nixexprs.tar.xz";
+    nixpkgs.url = "https://channels.nixos.org/nixpkgs-unstable/nixexprs.tar.xz";
     nvf = {
       url = "github:notashelf/nvf/main";
     };
   };
-
   outputs = {
     nixpkgs,
     nvf,
