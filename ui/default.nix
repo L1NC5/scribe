@@ -3,7 +3,10 @@
     ./animations.nix
     ./icons.nix
     ./indent.nix
+    ./keylist.nix
+    ./notifications.nix
     ./popups.nix
+    ./statusline.nix
     ./theme.nix
   ];
 
