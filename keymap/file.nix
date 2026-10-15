@@ -17,16 +17,22 @@ in {
         action = ":FzfLua buffers<CR>";
       }
       {
+        key = mkBinding "r";
+        mode = ["n"];
+        desc = "Show Recent Files";
+        action = ":FzfLua oldfiles<CR>";
+      }
+      {
         key = mkBinding "f";
         mode = ["n"];
         desc = "Find File";
-        action = ":Telescope find_files<CR>";
+        action = ":FzfLua files<CR>";
       }
       {
-        key = mkBinding "z";
+        key = mkBinding "g";
         mode = ["n"];
         desc = "Fuzzy in Files";
-        action = ":Telescope live_grep<CR>";
+        action = ":FzfLua live_grep<CR>";
       }
       {
         key = mkBinding "s";
