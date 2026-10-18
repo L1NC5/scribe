@@ -1,5 +1,6 @@
 {
   imports = [
+    ./code.nix
     ./file.nix
   ];
   vim = {
