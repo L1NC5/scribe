@@ -20,8 +20,8 @@ in {
       close = "<ESC>";
       complete = "<C-space>";
       confirm = "<CR>";
-      next = "<Tab>";
-      previous = "<S-Tab>";
+      next = "<C-n>";
+      previous = "<C-p>";
     };
     keymaps = [
       {

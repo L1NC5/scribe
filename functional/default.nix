@@ -5,6 +5,7 @@
     ./git.nix
     ./search.nix
     ./tabs.nix
+    ./tree.nix
   ];
   vim.mini = {
     ai.enable = true;

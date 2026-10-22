@@ -7,8 +7,8 @@ in {
       {
         key = mkBinding "t";
         mode = ["n"];
-        desc = "Toggle File Buffer";
-        action = ":Oil<CR>";
+        desc = "Toggle File Tree";
+        action = ":lua MiniFiles.open()<CR>";
       }
       {
         key = mkBinding "o";
